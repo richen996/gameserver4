@@ -1,99 +1,59 @@
-gdjs.PhysicCode = {};
-gdjs.PhysicCode.localVariables = [];
-gdjs.PhysicCode.GDFloorObjects1= [];
-gdjs.PhysicCode.GDFloorObjects2= [];
-gdjs.PhysicCode.GDNewSpriteObjects1= [];
-gdjs.PhysicCode.GDNewSpriteObjects2= [];
+gdjs.VictoryScenceCode = {};
+gdjs.VictoryScenceCode.localVariables = [];
+gdjs.VictoryScenceCode.GDTransparentButtonWithWhiteYellowBorderObjects1_1final = [];
+
+gdjs.VictoryScenceCode.GDNewSpriteObjects1= [];
+gdjs.VictoryScenceCode.GDNewSpriteObjects2= [];
+gdjs.VictoryScenceCode.GDTransparentButtonWithWhiteYellowBorderObjects1= [];
+gdjs.VictoryScenceCode.GDTransparentButtonWithWhiteYellowBorderObjects2= [];
+gdjs.VictoryScenceCode.GDTransparentButtonWithWhiteYellowBorder2Objects1= [];
+gdjs.VictoryScenceCode.GDTransparentButtonWithWhiteYellowBorder2Objects2= [];
 
 
-gdjs.PhysicCode.mapOfGDgdjs_9546PhysicCode_9546GDNewSpriteObjects1Objects = Hashtable.newFrom({"NewSprite": gdjs.PhysicCode.GDNewSpriteObjects1});
-gdjs.PhysicCode.eventsList0 = function(runtimeScene) {
-
-{
-
-gdjs.copyArray(runtimeScene.getObjects("NewSprite"), gdjs.PhysicCode.GDNewSpriteObjects1);
-
-let isConditionTrue_0 = false;
-isConditionTrue_0 = false;
-isConditionTrue_0 = gdjs.evtTools.input.cursorOnObject(gdjs.PhysicCode.mapOfGDgdjs_9546PhysicCode_9546GDNewSpriteObjects1Objects, runtimeScene, true, false);
-if (isConditionTrue_0) {
-/* Reuse gdjs.PhysicCode.GDNewSpriteObjects1 */
-{for(var i = 0, len = gdjs.PhysicCode.GDNewSpriteObjects1.length ;i < len;++i) {
-    gdjs.PhysicCode.GDNewSpriteObjects1[i].getBehavior("Physics2").addMouseJoint(gdjs.evtTools.input.getCursorX(runtimeScene, "", 0), gdjs.evtTools.input.getCursorY(runtimeScene, "", 0), 500, 10, 1, runtimeScene.getScene().getVariables().get("MJ"));
-}
-}{gdjs.evtTools.runtimeScene.resetTimer(runtimeScene, "R");
-}}
-
-}
-
-
-};gdjs.PhysicCode.eventsList1 = function(runtimeScene) {
+gdjs.VictoryScenceCode.mapOfGDgdjs_9546VictoryScenceCode_9546GDTransparentButtonWithWhiteYellowBorderObjects1Objects = Hashtable.newFrom({"TransparentButtonWithWhiteYellowBorder": gdjs.VictoryScenceCode.GDTransparentButtonWithWhiteYellowBorderObjects1});
+gdjs.VictoryScenceCode.eventsList0 = function(runtimeScene) {
 
 {
 
-
-let isConditionTrue_0 = false;
-{
-}
-
-}
-
-
-{
+gdjs.VictoryScenceCode.GDTransparentButtonWithWhiteYellowBorderObjects1.length = 0;
 
 
 let isConditionTrue_0 = false;
 isConditionTrue_0 = false;
-isConditionTrue_0 = gdjs.evtTools.input.isMouseButtonPressed(runtimeScene, "Left");
-if (isConditionTrue_0) {
+{gdjs.VictoryScenceCode.GDTransparentButtonWithWhiteYellowBorderObjects1_1final.length = 0;
+let isConditionTrue_1 = false;
 isConditionTrue_0 = false;
-{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(11963164);
+{
+gdjs.copyArray(runtimeScene.getObjects("TransparentButtonWithWhiteYellowBorder"), gdjs.VictoryScenceCode.GDTransparentButtonWithWhiteYellowBorderObjects2);
+for (var i = 0, k = 0, l = gdjs.VictoryScenceCode.GDTransparentButtonWithWhiteYellowBorderObjects2.length;i<l;++i) {
+    if ( gdjs.VictoryScenceCode.GDTransparentButtonWithWhiteYellowBorderObjects2[i].IsPressed((typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined)) ) {
+        isConditionTrue_1 = true;
+        gdjs.VictoryScenceCode.GDTransparentButtonWithWhiteYellowBorderObjects2[k] = gdjs.VictoryScenceCode.GDTransparentButtonWithWhiteYellowBorderObjects2[i];
+        ++k;
+    }
+}
+gdjs.VictoryScenceCode.GDTransparentButtonWithWhiteYellowBorderObjects2.length = k;
+if(isConditionTrue_1) {
+    isConditionTrue_0 = true;
+    for (let j = 0, jLen = gdjs.VictoryScenceCode.GDTransparentButtonWithWhiteYellowBorderObjects2.length; j < jLen ; ++j) {
+        if ( gdjs.VictoryScenceCode.GDTransparentButtonWithWhiteYellowBorderObjects1_1final.indexOf(gdjs.VictoryScenceCode.GDTransparentButtonWithWhiteYellowBorderObjects2[j]) === -1 )
+            gdjs.VictoryScenceCode.GDTransparentButtonWithWhiteYellowBorderObjects1_1final.push(gdjs.VictoryScenceCode.GDTransparentButtonWithWhiteYellowBorderObjects2[j]);
+    }
+}
+}
+{
+isConditionTrue_1 = gdjs.evtsExt__Gamepads__C_Button_pressed.func(runtimeScene, 1, "Start", (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined));
+if(isConditionTrue_1) {
+    isConditionTrue_0 = true;
+}
+}
+{
+gdjs.copyArray(gdjs.VictoryScenceCode.GDTransparentButtonWithWhiteYellowBorderObjects1_1final, gdjs.VictoryScenceCode.GDTransparentButtonWithWhiteYellowBorderObjects1);
 }
 }
 if (isConditionTrue_0) {
-
-{ //Subevents
-gdjs.PhysicCode.eventsList0(runtimeScene);} //End of subevents
-}
-
-}
-
-
-{
-
-
-let isConditionTrue_0 = false;
-{
-}
-
-}
-
-
-{
-
-
-let isConditionTrue_0 = false;
-isConditionTrue_0 = false;
-isConditionTrue_0 = gdjs.evtTools.input.isMouseButtonReleased(runtimeScene, "Left");
-if (isConditionTrue_0) {
-gdjs.copyArray(runtimeScene.getObjects("NewSprite"), gdjs.PhysicCode.GDNewSpriteObjects1);
-{for(var i = 0, len = gdjs.PhysicCode.GDNewSpriteObjects1.length ;i < len;++i) {
-    gdjs.PhysicCode.GDNewSpriteObjects1[i].getBehavior("Physics2").removeJoint(gdjs.evtTools.variable.getVariableNumber(runtimeScene.getScene().getVariables().get("MJ")));
-}
-}}
-
-}
-
-
-{
-
-
-let isConditionTrue_0 = false;
-{
-gdjs.copyArray(runtimeScene.getObjects("NewSprite"), gdjs.PhysicCode.GDNewSpriteObjects1);
-{for(var i = 0, len = gdjs.PhysicCode.GDNewSpriteObjects1.length ;i < len;++i) {
-    gdjs.PhysicCode.GDNewSpriteObjects1[i].getBehavior("Physics2").setMouseJointTarget(gdjs.evtTools.variable.getVariableNumber(runtimeScene.getScene().getVariables().get("MJ")), gdjs.evtTools.input.getCursorX(runtimeScene, "", 0), gdjs.evtTools.input.getCursorY(runtimeScene, "", 0));
-}
+{gdjs.evtTools.runtimeScene.replaceScene(runtimeScene, "GameScence", false);
+}{gdjs.evtTools.sound.playSoundOnChannel(runtimeScene, "music8.aac", gdjs.evtTools.object.getPickedInstancesCount(gdjs.VictoryScenceCode.mapOfGDgdjs_9546VictoryScenceCode_9546GDTransparentButtonWithWhiteYellowBorderObjects1Objects), false, 50, 1);
 }}
 
 }
@@ -104,36 +64,81 @@ gdjs.copyArray(runtimeScene.getObjects("NewSprite"), gdjs.PhysicCode.GDNewSprite
 
 let isConditionTrue_0 = false;
 isConditionTrue_0 = false;
-isConditionTrue_0 = gdjs.evtTools.runtimeScene.getTimerElapsedTimeInSecondsOrNaN(runtimeScene, "R") >= 1;
+isConditionTrue_0 = gdjs.evtTools.runtimeScene.sceneJustBegins(runtimeScene);
 if (isConditionTrue_0) {
-gdjs.copyArray(runtimeScene.getObjects("NewSprite"), gdjs.PhysicCode.GDNewSpriteObjects1);
-{for(var i = 0, len = gdjs.PhysicCode.GDNewSpriteObjects1.length ;i < len;++i) {
-    gdjs.PhysicCode.GDNewSpriteObjects1[i].getBehavior("Physics2").removeJoint(gdjs.evtTools.variable.getVariableNumber(runtimeScene.getScene().getVariables().get("MJ")));
-}
+{gdjs.evtTools.sound.playSoundOnChannel(runtimeScene, "music7.aac", gdjs.evtTools.runtimeScene.getSceneLoadingProgress(runtimeScene, "VictoryScence"), false, 50, 1);
 }}
+
+}
+
+
+{
+
+
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+{let isConditionTrue_1 = false;
+isConditionTrue_0 = false;
+{
+isConditionTrue_1 = gdjs.evtTools.input.isKeyPressed(runtimeScene, "b");
+if(isConditionTrue_1) {
+    isConditionTrue_0 = true;
+}
+}
+{
+isConditionTrue_1 = gdjs.evtsExt__Gamepads__C_Button_pressed.func(runtimeScene, 1, "X", (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined));
+if(isConditionTrue_1) {
+    isConditionTrue_0 = true;
+}
+}
+{
+}
+}
+if (isConditionTrue_0) {
+isConditionTrue_0 = false;
+{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(15166116);
+}
+}
+if (isConditionTrue_0) {
+{gdjs.evtsExt__BackButton__doDefault.func(runtimeScene, (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined));
+}}
+
+}
+
+
+{
+
+
+let isConditionTrue_0 = false;
+{
+}
 
 }
 
 
 };
 
-gdjs.PhysicCode.func = function(runtimeScene) {
+gdjs.VictoryScenceCode.func = function(runtimeScene) {
 runtimeScene.getOnceTriggers().startNewFrame();
 
-gdjs.PhysicCode.GDFloorObjects1.length = 0;
-gdjs.PhysicCode.GDFloorObjects2.length = 0;
-gdjs.PhysicCode.GDNewSpriteObjects1.length = 0;
-gdjs.PhysicCode.GDNewSpriteObjects2.length = 0;
+gdjs.VictoryScenceCode.GDNewSpriteObjects1.length = 0;
+gdjs.VictoryScenceCode.GDNewSpriteObjects2.length = 0;
+gdjs.VictoryScenceCode.GDTransparentButtonWithWhiteYellowBorderObjects1.length = 0;
+gdjs.VictoryScenceCode.GDTransparentButtonWithWhiteYellowBorderObjects2.length = 0;
+gdjs.VictoryScenceCode.GDTransparentButtonWithWhiteYellowBorder2Objects1.length = 0;
+gdjs.VictoryScenceCode.GDTransparentButtonWithWhiteYellowBorder2Objects2.length = 0;
 
-gdjs.PhysicCode.eventsList1(runtimeScene);
-gdjs.PhysicCode.GDFloorObjects1.length = 0;
-gdjs.PhysicCode.GDFloorObjects2.length = 0;
-gdjs.PhysicCode.GDNewSpriteObjects1.length = 0;
-gdjs.PhysicCode.GDNewSpriteObjects2.length = 0;
+gdjs.VictoryScenceCode.eventsList0(runtimeScene);
+gdjs.VictoryScenceCode.GDNewSpriteObjects1.length = 0;
+gdjs.VictoryScenceCode.GDNewSpriteObjects2.length = 0;
+gdjs.VictoryScenceCode.GDTransparentButtonWithWhiteYellowBorderObjects1.length = 0;
+gdjs.VictoryScenceCode.GDTransparentButtonWithWhiteYellowBorderObjects2.length = 0;
+gdjs.VictoryScenceCode.GDTransparentButtonWithWhiteYellowBorder2Objects1.length = 0;
+gdjs.VictoryScenceCode.GDTransparentButtonWithWhiteYellowBorder2Objects2.length = 0;
 
 
 return;
 
 }
 
-gdjs['PhysicCode'] = gdjs.PhysicCode;
+gdjs['VictoryScenceCode'] = gdjs.VictoryScenceCode;
